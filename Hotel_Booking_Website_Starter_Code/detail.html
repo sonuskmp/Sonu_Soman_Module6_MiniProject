@@ -8,20 +8,45 @@
 <body>
     <div id="main">
         <div id="header">
-            <img src="assests/images/logo.png" height="150px" width="200px" alt="logo">
+            <a href="index.html">
+                <img src="assests/images/logo.png" height="150px" width="200px" alt="logo">
+            </a>
 
             <ul>
                 <li>
-                    <a href="login.html" target="_blank">Login</a>
+                    <a href="login.html">Login</a>
                 </li>
             </ul>
         </div>
 
         <div id="content">
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-            <p>
-                <a href="payment.html">Book Now</a>
-            </p>
+            <form action="payment.html">
+                <p>
+                    <label for="adults">Adults:</label>
+                    <input type="number" name="adults" min="1" required>
+                </p>
+                <p>
+                    <label for="username">Name:</label>
+                    <input type="text" name="username" required>
+                </p>
+                <p>
+                    <label for="fromDate">From Date:</label>
+                    <input type="date" name="fromDate" required>
+                </p>
+                <p>
+                    <label for="toDate">To Date:</label>
+                    <input type="date" name="toDate" required>
+                </p>
+                <p>
+                    <label for="total">Total:</label>
+                    <input type="text" name="price" disabled>
+                </p>
+                <p>
+                    <input type="submit" value="Book Now"></input>
+                </p>
+            </form>
+
             <h2>Radisson Blu Hotel</h2>
             <p>RATING</p>
             <p>5 Star</p>
@@ -43,7 +68,9 @@
 
         <div id="footer">
             <p>
-                    <p><a href="contact.html" target="_blank">Contact Us</a></p>
+                <p>
+                    <a href="contact.html">Contact Us</a>
+                </p>
             </p>
             <a href="https://www.facebook.com/" target="_blank">
                 <img src="assests/images/facebook.png" height="20px" width="22px">
